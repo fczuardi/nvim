@@ -6,13 +6,13 @@ set expandtab
 set number
 set relativenumber
 
-" vim-plug plugin manager
-" see https://github.com/junegunn/vim-plug
-call plug#begin()
-
 " persistent undo
 set undofile
 set undodir=~/.nvimundo
+
+" vim-plug plugin manager
+" see https://github.com/junegunn/vim-plug
+call plug#begin()
 
 " Nova colorscheme
 Plug 'trevordmiller/nova-vim'
@@ -24,11 +24,12 @@ Plug 'jaawerth/neomake-local-eslint-first'
 " gutter for git changes
 Plug 'airblade/vim-gitgutter'
 
-" tab completions?
+" tab completions
 Plug 'ervandew/supertab'
 
 call plug#end()
 
+" Nova color theme
 colorscheme nova
 
 " run eslint on save
