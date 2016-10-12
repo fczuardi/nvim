@@ -1,5 +1,6 @@
 " tab to be 4 spaces
 set tabstop=4
+set shiftwidth=4
 set expandtab
 
 " relative numbers
@@ -14,9 +15,6 @@ set undodir=~/.nvimundo
 " see https://github.com/junegunn/vim-plug
 call plug#begin()
 
-" Nova colorscheme
-Plug 'trevordmiller/nova-vim'
-
 " Neomake (linters)
 Plug 'neomake/neomake'
 Plug 'jaawerth/neomake-local-eslint-first'
@@ -27,10 +25,19 @@ Plug 'airblade/vim-gitgutter'
 " tab completions
 Plug 'ervandew/supertab'
 
+" surroundings
+Plug 'tpope/vim-surround'
+
+" Nova colorscheme
+Plug 'trevordmiller/nova-vim'
+
 call plug#end()
 
 " Nova color theme
 colorscheme nova
+
+" highlight in red charachters after the 72th column
+match ErrorMsg '\%>72v.\+'
 
 " run eslint on save
 let g:neomake_javascript_enabled_makers = ['eslint']
