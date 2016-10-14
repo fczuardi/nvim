@@ -28,6 +28,9 @@ Plug 'ervandew/supertab'
 " surroundings
 Plug 'tpope/vim-surround'
 
+" multiple cursors
+Plug 'vim-multiple-cursors'
+
 " Nova colorscheme
 Plug 'trevordmiller/nova-vim'
 
