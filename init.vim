@@ -28,6 +28,9 @@ Plug 'ervandew/supertab'
 " surroundings
 Plug 'tpope/vim-surround'
 
+" toggle comment line or block
+Plug 'scrooloose/nerdcommenter'
+
 " multiple cursors
 Plug 'vim-multiple-cursors'
 
