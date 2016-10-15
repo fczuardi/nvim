@@ -54,6 +54,9 @@ autocmd BufWritePost * Neomake
 let g:gitgutter_sign_column_always = 1
 set updatetime=250
 
+" add space after comment
+let g:NERDSpaceDelims = 1
+
 " waiting for https://github.com/zeit/hyper/issues/270 to be fixed :(
 " let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1 " Cursor is pipe in Insert, block in Normal
 
