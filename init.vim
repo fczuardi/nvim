@@ -28,6 +28,10 @@ Plug 'ervandew/supertab'
 " surroundings
 Plug 'tpope/vim-surround'
 
+" file fuzzy search
+Plug 'kien/ctrlp.vim'
+
+
 " toggle comment line or block
 Plug 'scrooloose/nerdcommenter'
 
@@ -56,6 +60,11 @@ set updatetime=250
 
 " add space after comment
 let g:NERDSpaceDelims = 1
+
+" fuzzy finder config
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,node_modules,.git
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_use_caching=1
 
 " waiting for https://github.com/zeit/hyper/issues/270 to be fixed :(
 " let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1 " Cursor is pipe in Insert, block in Normal
