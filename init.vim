@@ -67,7 +67,7 @@ let g:NERDSpaceDelims = 1
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " fuzzy finder config
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,node_modules,.git
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,node_modules,*/dist/*,.git
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_use_caching=1
 
