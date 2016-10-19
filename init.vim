@@ -25,12 +25,14 @@ Plug 'airblade/vim-gitgutter'
 " tab completions
 Plug 'ervandew/supertab'
 
+" project full-text search
+Plug 'mileszs/ack.vim'
+
 " surroundings
 Plug 'tpope/vim-surround'
 
 " file fuzzy search
 Plug 'kien/ctrlp.vim'
-
 
 " toggle comment line or block
 Plug 'scrooloose/nerdcommenter'
@@ -60,6 +62,9 @@ set updatetime=250
 
 " add space after comment
 let g:NERDSpaceDelims = 1
+
+" silver searcher aka ag / ack full text search config
+let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " fuzzy finder config
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,node_modules,.git
