@@ -51,8 +51,15 @@ colorscheme nova
 " highlight in red charachters after the 72th column
 match ErrorMsg '\%>72v.\+'
 
-" run eslint on save
+" Neomake
+"
+" - HTML
+"   use tidy-html5 for modern markup checker
+"   brew install tidy-html5
+"
+" - Javascript
 let g:neomake_javascript_enabled_makers = ['eslint']
+" open error list and lint on all saves
 let g:neomake_open_list=2
 autocmd BufWritePost * Neomake
 
