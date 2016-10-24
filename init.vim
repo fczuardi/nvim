@@ -25,6 +25,9 @@ Plug 'airblade/vim-gitgutter'
 " tab completions
 Plug 'ervandew/supertab'
 
+" quotes, parens and brackets auto-completion on insert mode
+Plug 'Raimondi/delimitMate'
+
 " project full-text search
 Plug 'mileszs/ack.vim'
 
