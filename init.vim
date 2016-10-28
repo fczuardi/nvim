@@ -19,6 +19,10 @@ call plug#begin()
 Plug 'neomake/neomake'
 Plug 'jaawerth/neomake-local-eslint-first'
 
+" elm-lang make errors and description
+" see https://github.com/elmcast/elm-vim
+Plug 'elmcast/elm-vim'
+
 " gutter for git changes
 Plug 'airblade/vim-gitgutter'
 
@@ -51,8 +55,9 @@ call plug#end()
 " Nova color theme
 colorscheme nova
 
-" highlight in red charachters after the 72th column
-match ErrorMsg '\%>72v.\+'
+" change color column to display a bg and set it to 80
+highlight ColorColumn guifg=#3C4C55 guibg=#556873
+set colorcolumn=80
 
 " Neomake
 "
