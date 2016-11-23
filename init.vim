@@ -1,91 +1,22 @@
-" tab to be 4 spaces
-set tabstop=4
-set shiftwidth=4
-set expandtab
-
-" relative numbers
-set number
-set relativenumber
-
-" persistent undo
-set undofile
-set undodir=~/.nvimundo
-
-" vim-plug plugin manager
-" see https://github.com/junegunn/vim-plug
 call plug#begin()
+" basic
+source $HOME/mnmo/nvim/cmdbar.vim
+source $HOME/mnmo/nvim/tabs.vim
+source $HOME/mnmo/nvim/undo.vim
 
-" Neomake (linters)
-Plug 'neomake/neomake'
-Plug 'jaawerth/neomake-local-eslint-first'
+" project files
+source $HOME/mnmo/nvim/fuzzyfind.vim
+source $HOME/mnmo/nvim/grep.vim
 
-" elm-lang make errors and description
-" see https://github.com/elmcast/elm-vim
-Plug 'elmcast/elm-vim'
+" languages
+source $HOME/mnmo/nvim/neomake.vim
+source $HOME/mnmo/nvim/neomake.javascript.vim
 
-" gutter for git changes
-Plug 'airblade/vim-gitgutter'
-
-" tab completions
-Plug 'ervandew/supertab'
-
-" quotes, parens and brackets auto-completion on insert mode
-Plug 'Raimondi/delimitMate'
-
-" project full-text search
-Plug 'mileszs/ack.vim'
-
-" surroundings
-Plug 'tpope/vim-surround'
-
-" file fuzzy search
-Plug 'kien/ctrlp.vim'
-
-" toggle comment line or block
-Plug 'scrooloose/nerdcommenter'
-
-" multiple cursors
-Plug 'vim-multiple-cursors'
-
-" Nova colorscheme
-Plug 'trevordmiller/nova-vim'
-
+" visual enchancements
+source $HOME/mnmo/nvim/number.vim
+source $HOME/mnmo/nvim/statusline.vim
+source $HOME/mnmo/nvim/colorscheme.gruvbox.vim
+" source $HOME/mnmo/nvim/colorscheme.base16.vim
+" source $HOME/mnmo/nvim/colorscheme.nova.vim
 call plug#end()
-
-" Nova color theme
-colorscheme nova
-
-" change color column to display a bg and set it to 80
-highlight ColorColumn guifg=#3C4C55 guibg=#556873
-set colorcolumn=80
-
-" Neomake
-"
-" - HTML
-"   use tidy-html5 for modern markup checker
-"   brew install tidy-html5
-"
-" - Javascript
-let g:neomake_javascript_enabled_makers = ['eslint']
-" open error list and lint on all saves
-let g:neomake_open_list=2
-autocmd BufWritePost * Neomake
-
-" gitgutter
-let g:gitgutter_sign_column_always = 1
-set updatetime=250
-
-" add space after comment
-let g:NERDSpaceDelims = 1
-
-" silver searcher aka ag / ack full text search config
-let g:ackprg = 'ag --nogroup --nocolor --column'
-
-" fuzzy finder config
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,node_modules,*/dist/*,.git
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_use_caching=1
-
-" waiting for https://github.com/zeit/hyper/issues/270 to be fixed :(
-" let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1 " Cursor is pipe in Insert, block in Normal
 
