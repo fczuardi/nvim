@@ -6,6 +6,7 @@ source $HOME/mnmo/nvim/undo.vim
 
 " code editing
 source $HOME/mnmo/nvim/comment.vim
+source $HOME/mnmo/nvim/cycle.vim
 source $HOME/mnmo/nvim/autocomplete.vim
 source $HOME/mnmo/nvim/git.vim
 
