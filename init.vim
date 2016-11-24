@@ -16,6 +16,7 @@ source $HOME/mnmo/nvim/grep.vim
 " languages
 source $HOME/mnmo/nvim/neomake.vim
 source $HOME/mnmo/nvim/neomake.javascript.vim
+source $HOME/mnmo/nvim/javascript.vim
 source $HOME/mnmo/nvim/toml.vim
 source $HOME/mnmo/nvim/elm.vim
 
