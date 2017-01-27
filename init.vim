@@ -15,11 +15,11 @@ source $HOME/mnmo/nvim/fuzzyfind.vim
 source $HOME/mnmo/nvim/grep.vim
 
 " languages
-source $HOME/mnmo/nvim/neomake.vim
-source $HOME/mnmo/nvim/neomake.javascript.vim
+" source $HOME/mnmo/nvim/neomake.vim
+" source $HOME/mnmo/nvim/neomake.javascript.vim
 source $HOME/mnmo/nvim/javascript.vim
-source $HOME/mnmo/nvim/toml.vim
-source $HOME/mnmo/nvim/elm.vim
+" source $HOME/mnmo/nvim/toml.vim
+" source $HOME/mnmo/nvim/elm.vim
 
 " visual enchancements
 source $HOME/mnmo/nvim/number.vim
