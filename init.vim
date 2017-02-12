@@ -3,6 +3,7 @@ call plug#begin()
 source $HOME/mnmo/nvim/cmdbar.vim
 source $HOME/mnmo/nvim/tabs.vim
 source $HOME/mnmo/nvim/undo.vim
+source $HOME/mnmo/nvim/scroll.vim
 
 " code editing
 source $HOME/mnmo/nvim/comment.vim
