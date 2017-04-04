@@ -1,5 +1,6 @@
 call plug#begin()
 " basic
+source $HOME/mnmo/nvim/leader.vim
 source $HOME/mnmo/nvim/cmdbar.vim
 source $HOME/mnmo/nvim/tabs.vim
 source $HOME/mnmo/nvim/undo.vim
