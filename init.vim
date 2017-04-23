@@ -6,6 +6,7 @@ source $HOME/mnmo/nvim/tabs.vim
 source $HOME/mnmo/nvim/undo.vim
 source $HOME/mnmo/nvim/scroll.vim
 source $HOME/mnmo/nvim/panes.vim
+source $HOME/mnmo/nvim/newline.vim
 
 " code editing
 source $HOME/mnmo/nvim/comment.vim
