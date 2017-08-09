@@ -13,3 +13,5 @@ nnoremap <C-H> <C-W><C-H>
 " Choose Send Escape Sequence as Action
 " Type [104;5u for Esc+
 
+Plug 'christoomey/vim-tmux-navigator'
+

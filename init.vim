@@ -23,7 +23,7 @@ source $HOME/mnmo/nvim/grep.vim
 " source $HOME/mnmo/nvim/neomake.javascript.vim
 source $HOME/mnmo/nvim/javascript.vim
 source $HOME/mnmo/nvim/flowtype.javascript.vim
-" source $HOME/mnmo/nvim/toml.vim
+source $HOME/mnmo/nvim/toml.vim
 " source $HOME/mnmo/nvim/elm.vim
 
 " visual enchancements
