@@ -8,6 +8,9 @@ source $HOME/mnmo/nvim/scroll.vim
 source $HOME/mnmo/nvim/panes.vim
 source $HOME/mnmo/nvim/newline.vim
 
+" training vim (disable arrow keys)
+source $HOME/mnmo/nvim/training.vim
+
 " code editing
 source $HOME/mnmo/nvim/comment.vim
 source $HOME/mnmo/nvim/cycle.vim
