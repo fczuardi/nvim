@@ -33,7 +33,9 @@ source $HOME/mnmo/nvim/toml.vim
 source $HOME/mnmo/nvim/number.vim
 source $HOME/mnmo/nvim/statusline.vim
 source $HOME/mnmo/nvim/colorscheme.gruvbox.vim
-" source $HOME/mnmo/nvim/colorscheme.base16.vim
-" source $HOME/mnmo/nvim/colorscheme.nova.vim
+source $HOME/mnmo/nvim/colorscheme.base16.vim
+source $HOME/mnmo/nvim/colorscheme.nova.vim
+source $HOME/mnmo/nvim/colorscheme.selection.vim
+
 call plug#end()
 
