@@ -8,6 +8,9 @@ source $HOME/mnmo/nvim/scroll.vim
 source $HOME/mnmo/nvim/panes.vim
 source $HOME/mnmo/nvim/newline.vim
 
+" training vim (disable arrow keys)
+source $HOME/mnmo/nvim/training.vim
+
 " code editing
 source $HOME/mnmo/nvim/comment.vim
 source $HOME/mnmo/nvim/cycle.vim
@@ -23,7 +26,8 @@ source $HOME/mnmo/nvim/grep.vim
 " source $HOME/mnmo/nvim/neomake.javascript.vim
 source $HOME/mnmo/nvim/javascript.vim
 source $HOME/mnmo/nvim/flowtype.javascript.vim
-source $HOME/mnmo/nvim/reason.vim
+" source $HOME/mnmo/nvim/reason.vim
+" source $HOME/mnmo/nvim/toml.vim
 " source $HOME/mnmo/nvim/toml.vim
 " source $HOME/mnmo/nvim/elm.vim
 
@@ -31,7 +35,9 @@ source $HOME/mnmo/nvim/reason.vim
 source $HOME/mnmo/nvim/number.vim
 source $HOME/mnmo/nvim/statusline.vim
 source $HOME/mnmo/nvim/colorscheme.gruvbox.vim
-" source $HOME/mnmo/nvim/colorscheme.base16.vim
-" source $HOME/mnmo/nvim/colorscheme.nova.vim
+source $HOME/mnmo/nvim/colorscheme.base16.vim
+source $HOME/mnmo/nvim/colorscheme.nova.vim
+source $HOME/mnmo/nvim/colorscheme.selection.vim
+
 call plug#end()
 
